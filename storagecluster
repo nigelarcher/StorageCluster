@@ -613,9 +613,9 @@ mainLoop = function()
 			local b, c
 			b, ct, c = validateWeeblerMsg(message)
 			if  (b == true ) then
-				-- redstone.setOutput("front", false) -- blinky
+				--redstone.setOutput("front", false) -- blinky
 				processCmd( id, ct, c)
-				-- redstone.setOutput("front", true) -- blinky
+				--redstone.setOutput("front", true) -- blinky
 				else
 			end
 		end
@@ -641,7 +641,6 @@ if ( os.getComputerLabel() == nil or os.getComputerLabel == "" ) then
 	os.setComputerLabel(tostring(os.getComputerID()))
 end
 print("Starting...")
-redstone.setOutput("front", true)
+--redstone.setOutput("front", true)
 parallel.waitForAll (mainLoop, doSorter)
-
 
