@@ -613,9 +613,9 @@ mainLoop = function()
 			local b, c
 			b, ct, c = validateWeeblerMsg(message)
 			if  (b == true ) then
-				redstone.setOutput("front", false) -- blinky
+				-- redstone.setOutput("front", false) -- blinky
 				processCmd( id, ct, c)
-				redstone.setOutput("front", true) -- blinky
+				-- redstone.setOutput("front", true) -- blinky
 				else
 			end
 		end
