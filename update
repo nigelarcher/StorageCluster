@@ -2,7 +2,7 @@
 -- Version 1.0 12/15/2012
 
 -- Config
-local author = "HoraceWeebler"
+local author = "selectfew"
 local project = "StorageCluster"
 local branch = "master"
 local screenw,screenh = term.getSize()
